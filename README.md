@@ -32,7 +32,13 @@
 
 🔹PHẦN C — SUY LUẬN (20 điểm)
 
+- Câu C1 (10đ) — Thiết kế cấu trúc : Chưa hoàn thành
+
+- Câu C2 (10đ) — So sánh & Tranh luận : Chưa hoàn thành
+
 🔹PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
+
+- /video
 
 ## Ghi chú
 
