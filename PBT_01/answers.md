@@ -46,26 +46,26 @@ A12. Khoanh thông tin (/screenshots/baitapA12)
 
 Vì code trên dùng toàn <div> → Google không hiểu cấu trúc → bị đánh giá SEO thấp.
 
-- Lỗi 1: Không dùng `<header>`
-  Sửa: `<div class="header">` -> `<header>`
-- Lỗi 2: Menu không dùng `<nav>`
-  Sửa: `<div class="menu">` -> `<nav>`
-- Lỗi 3: Không dùng `<main>`
-  Sửa: `<div class="main">` -> `<main>`
-- Lỗi 4: Footer không semantic
-  Sửa: `<div class="footer">` -> `<footer>`
+- Lỗi 1: Không dùng `<header>` <br>
+  Sửa: `<div class="header">` -> `<header>` <br>
+- Lỗi 2: Menu không dùng `<nav>` <br>
+  Sửa: `<div class="menu">` -> `<nav>` <br>
+- Lỗi 3: Không dùng `<main>` <br>
+  Sửa: `<div class="main">` -> `<main>` <br>
+- Lỗi 4: Footer không semantic <br>
+  Sửa: `<div class="footer">` -> `<footer>` <br>
 
 ## Câu A3 (5đ) — Block vs Inline
 
 Không chạy code, hãy vẽ tay (hoặc mô tả bằng text art) kết quả hiển thị của đoạn HTML sau. Giải thích tại sao.
 
-`<div>`Hộp 1`</div>`
-`<span>`Text A`</span>`
-`<span>`Text B`</span>`
-`<div>`Hộp 2`</div>`
-`<span>`Text C`</span>`
-`<strong>`Text D`</strong>`
-`<div>`Hộp 3`</div>`
+`<div>`Hộp 1`</div>` <br>
+`<span>`Text A`</span>` <br>
+`<span>`Text B`</span>` <br>
+`<div>`Hộp 2`</div>` <br>
+`<span>`Text C`</span>` <br>
+`<strong>`Text D`</strong>` <br>
+`<div>`Hộp 3`</div>` <br>
 
 ## Trả lời
 
@@ -93,12 +93,10 @@ Giải thích:
 
 ## Trả lời
 
-```
-<thead>, <tbody>, <tfoot> khác nhau:
-<thead> Phần tiêu đề bảng
-<tbody> Nội dung chính
-<tfoot> Phần cuối (tổng, ghi chú)
-```
+`<thead>`, `<tbody>`, `<tfoot>` khác nhau:
+`<thead>` Phần tiêu đề bảng
+`<tbody>` Nội dung chính
+`<tfoot>` Phần cuối (tổng, ghi chú)
 
 Vì sao KHÔNG nên dùng table để layout:
 
