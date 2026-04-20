@@ -96,9 +96,9 @@ Giải thích: <br>
 ## Trả lời
 
 `<thead>`, `<tbody>`, `<tfoot>` khác nhau: <br>
-🔹`<thead>` Phần tiêu đề bảng <br>
-🔹`<tbody>` Nội dung chính <br>
-🔹`<tfoot>` Phần cuối (tổng, ghi chú) <br>
+🔹`<thead>`: Phần tiêu đề bảng <br>
+🔹`<tbody>`: Nội dung chính <br>
+🔹`<tfoot>`: Phần cuối (tổng, ghi chú) <br>
 
 Vì sao KHÔNG nên dùng table để layout:
 
