@@ -24,77 +24,79 @@ A12. Khoanh thông tin (/screenshots/baitapA12)
 
 Đọc chương 04, trả lời: Tại sao trang web dưới đây bị Google đánh giá SEO thấp? Liệt kê ít nhất 4 lỗi semantic và sửa lại.
 
+```html
 <div class="header">
-    <div class="logo">ShopTLU</div>
-    <div class="menu">
-        <div><a href="/">Trang chủ</a></div>
-        <div><a href="/products">Sản phẩm</a></div>
-    </div>
+  <div class="logo">ShopTLU</div>
+  <div class="menu">
+    <div><a href="/">Trang chủ</a></div>
+    <div><a href="/products">Sản phẩm</a></div>
+  </div>
 </div>
 <div class="main">
-    <div class="product">
-        <div class="title">iPhone 16 Pro</div>
-        <div class="price">25.990.000đ</div>
-        <div class="image"><img src="iphone.jpg"></div>
-    </div>
+  <div class="product">
+    <div class="title">iPhone 16 Pro</div>
+    <div class="price">25.990.000đ</div>
+    <div class="image"><img src="iphone.jpg" /></div>
+  </div>
 </div>
 <div class="footer">© 2026 ShopTLU</div>
+```
 
 ## Trả lời
 
 Vì code trên dùng toàn <div> → Google không hiểu cấu trúc → bị đánh giá SEO thấp.
 
-- Lỗi 1: Không dùng <header>
-    <div class="header">  ->  <header>
+- Lỗi 1: Không dùng `<header>`
+  `<div class="header">` -> `<header>`
 - Lỗi 2: Menu không dùng <nav>
-    <div class="menu">  ->  <nav>
+  `<div class="menu">` -> `<nav>`
 - Lỗi 3: Không dùng <main>
-    <div class="main"> -> <main>
+  `<div class="main">` -> `<main>`
 - Lỗi 4: Footer không semantic
-    <div class="footer">  ->  <footer>
+  `<div class="footer">` -> `<footer>`
 
 ## Câu A3 (5đ) — Block vs Inline
 
 Không chạy code, hãy vẽ tay (hoặc mô tả bằng text art) kết quả hiển thị của đoạn HTML sau. Giải thích tại sao.
 
-<div>Hộp 1</div>
-<span>Text A</span>
-<span>Text B</span>
-<div>Hộp 2</div>
-<span>Text C</span>
-<strong>Text D</strong>
-<div>Hộp 3</div>
+`<div>`Hộp 1`</div>`
+`<span>`Text A`</span>`
+`<span>`Text B`</span>`
+`<div>`Hộp 2`</div>`
+`<span>`Text C`</span>`
+`<strong>`Text D`</strong>`
+`<div>`Hộp 3`</div>`
 
 ## Trả lời
 
 Kết quả hiển thị:
-Hộp 1
+`Hộp 1
 Text A Text B
 Hộp 2
 Text C Text D
-Hộp 3
+Hộp 3`
 
 Giải thích:
-🔹 <div> là block
+🔹`<div>` là block
 
 - Chiếm cả dòng
 - Tự xuống dòng
 
-🔹 <span>, <strong> là inline
+🔹`<span>`, `<strong>` là inline
 
 - Nằm cùng dòng
 - Không xuống dòng
 
 ## Câu A4 (5đ) — Table
 
-Đọc chương 05. Giải thích sự khác nhau giữa <thead>, <tbody>, <tfoot>. Tại sao KHÔNG NÊN dùng table để tạo layout trang web? (Ghi rõ ít nhất 3 lý do)
+Đọc chương 05. Giải thích sự khác nhau giữa `<thead>`, `<tbody>`, `<tfoot>`. Tại sao KHÔNG NÊN dùng table để tạo layout trang web? (Ghi rõ ít nhất 3 lý do)
 
 ## Trả lời
 
-<thead>, <tbody>, <tfoot> khác nhau:
-   <thead>	Phần tiêu đề bảng
-   <tbody>	Nội dung chính
-   <tfoot>	Phần cuối (tổng, ghi chú)
+`<thead>`, `<tbody>`, `<tfoot>` khác nhau:
+`<thead>` Phần tiêu đề bảng
+`<tbody>` Nội dung chính
+`<tfoot>` Phần cuối (tổng, ghi chú)
 
 Vì sao KHÔNG nên dùng table để layout:
 
@@ -103,7 +105,7 @@ Table dùng cho dữ liệu, không phải layout
 ❌ Lý do 2: Khó responsive
 Table không linh hoạt trên mobile
 ❌ Lý do 3: Code khó bảo trì
-Lồng nhiều <tr>, <td> → rất rối
+Lồng nhiều `<tr>`, `<td>` → rất rối
 ❌ Lý do 4: SEO kém
 Google khó hiểu nội dung
 
