@@ -47,13 +47,13 @@ A12. Khoanh thông tin (/screenshots/baitapA12)
 Vì code trên dùng toàn <div> → Google không hiểu cấu trúc → bị đánh giá SEO thấp.
 
 - Lỗi 1: Không dùng `<header>`
-  `<div class="header">` -> `<header>`
-- Lỗi 2: Menu không dùng <nav>
-  `<div class="menu">` -> `<nav>`
-- Lỗi 3: Không dùng <main>
-  `<div class="main">` -> `<main>`
+  Sửa: `<div class="header">` -> `<header>`
+- Lỗi 2: Menu không dùng `<nav>`
+  Sửa: `<div class="menu">` -> `<nav>`
+- Lỗi 3: Không dùng `<main>`
+  Sửa: `<div class="main">` -> `<main>`
 - Lỗi 4: Footer không semantic
-  `<div class="footer">` -> `<footer>`
+  Sửa: `<div class="footer">` -> `<footer>`
 
 ## Câu A3 (5đ) — Block vs Inline
 
