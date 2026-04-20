@@ -93,10 +93,12 @@ Giải thích:
 
 ## Trả lời
 
-`<thead>`, `<tbody>`, `<tfoot>` khác nhau:
-`<thead>` Phần tiêu đề bảng
-`<tbody>` Nội dung chính
-`<tfoot>` Phần cuối (tổng, ghi chú)
+```
+<thead>, <tbody>, <tfoot> khác nhau:
+<thead> Phần tiêu đề bảng
+<tbody> Nội dung chính
+<tfoot> Phần cuối (tổng, ghi chú)
+```
 
 Vì sao KHÔNG nên dùng table để layout:
 
