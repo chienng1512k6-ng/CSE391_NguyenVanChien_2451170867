@@ -147,19 +147,19 @@ Vì sao KHÔNG nên dùng table để layout:
 
 Trong trang shopee.vn có:
 
-### 1.Sử dụng semantic
+### 1. Sử dụng semantic
 
 - Không tìm thấy rõ các thẻ semantic như `<header>`, `<nav>`, `<main>`
 - Trang chủ yếu dùng `<div>` để xây dựng layout
 
-### 2.Tìm table trên trang
+### 2. Tìm table trên trang
 
 - Trang Shopee không dùng table cho layout mà dùng `<div>` → không có `<thead>`, `<tbody>`
 
-### 3.Tìm form trên trang
+### 3. Tìm form trên trang
 
 - Trang không có `action` và `method`
-- Input types:
+- Input types: <br>
   `<input>` (ô nhập tìm kiếm) → type mặc định là "text" <br>
   `<button type="button">` → dùng để kích hoạt tìm kiếm <br>
 

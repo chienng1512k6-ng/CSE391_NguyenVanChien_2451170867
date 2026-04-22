@@ -38,7 +38,7 @@
 
 🔹PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
 
-- /video : Chưa hoàn thành
+- Video : Chưa hoàn thành
 
 ## Ghi chú
 
