@@ -75,7 +75,7 @@ Kết quả hiển thị: <br>
 Hộp 1 <br>
 Text A Text B <br>
 Hộp 2 <br>
-Text C Text D <br>
+Text C **Text D** <br>
 Hộp 3 <br>
 
 Giải thích: <br>
