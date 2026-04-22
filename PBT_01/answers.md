@@ -113,6 +113,38 @@ Google khó hiểu nội dung <br>
 
 # PHẦN B — THỰC HÀNH CODE (60 điểm)
 
+## Bài B1 (15đ) — Trang Profile cá nhân
+
+## Bài B2 (15đ) — Trang Sản phẩm E-Commerce
+
+## Bài B3 (15đ) — Debug HTML
+
+- Lỗi 1: Dòng 1 — <!DOCTYPE> thiếu html — Sửa thành `<!DOCTYPE html>`
+
+- Lỗi 2: Dòng 2 — Thiếu thuộc tính lang trong `<html>` — Thêm lang="vi"
+
+- Lỗi 2: Dòng 4 — Thẻ `<title>` không đóng — Thêm `</title>`
+
+- Lỗi 3: Dòng 5 — charset sai (utf8) — Sửa thành UTF-8
+
+- Lỗi 4: Dòng 9 — Thẻ `<h1>` không đóng đúng — Sửa thành `</h1>`
+
+- Lỗi 5: Dòng 13 — Thẻ `<a>` không đóng — Thêm `</a>`
+
+- Lỗi 6: Dòng 20 — Thiếu dấu ngoặc kép src ảnh — Sửa thành src="iphone.jpg"
+
+- Lỗi 7: Dòng 20 — Thiếu thuộc tính alt — Thêm alt="iPhone 16 Pro"
+
+- Lỗi 8: Dòng 22 — Sai thứ tự đóng thẻ `<b>` — Sửa thành `<strong>`...`</strong>`
+
+- Lỗi 9: Dòng 28 — Table thiếu `<thead>`, `<tbody>` — Thêm cấu trúc semantic
+
+- Lỗi 10: Dòng 36 — Dùng `<main>` sai (2 lần) — Đổi cái thứ 2 thành `<aside>`
+
+- Lỗi 11: Dòng 41 — Thẻ `<p>` trong footer không đóng — Thêm `</p>`
+
+## Bài B4 (15đ) — Phân tích trang web thật
+
 # PHẦN C — SUY LUẬN (20 điểm)
 
 # PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
