@@ -24,9 +24,9 @@
 
 - Bài B1 (15đ) — Trang Profile cá nhân : Đã hoàn thành
 
-- Bài B2 (15đ) — Trang Sản phẩm E-Commerce : Chưa hoàn thành
+- Bài B2 (15đ) — Trang Sản phẩm E-Commerce : Đã hoàn thành
 
-- Bài B3 (15đ) — Debug HTML : Chưa hoàn thành
+- Bài B3 (15đ) — Debug HTML : Đã hoàn thành
 
 - Bài B4 (15đ) — Phân tích trang web thật : Chưa hoàn thành
 
