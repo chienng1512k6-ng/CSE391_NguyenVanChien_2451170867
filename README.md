@@ -28,7 +28,7 @@
 
 - Bài B3 (15đ) — Debug HTML : Đã hoàn thành
 
-- Bài B4 (15đ) — Phân tích trang web thật : Chưa hoàn thành
+- Bài B4 (15đ) — Phân tích trang web thật : Đã hoàn thành
 
 🔹PHẦN C — SUY LUẬN (20 điểm)
 

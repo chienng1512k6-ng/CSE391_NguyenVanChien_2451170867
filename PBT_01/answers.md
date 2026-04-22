@@ -102,14 +102,14 @@ Giải thích: <br>
 
 Vì sao KHÔNG nên dùng table để layout:
 
-❌ Lý do 1: Không semantic <br>
-Table dùng cho dữ liệu, không phải layout <br>
-❌ Lý do 2: Khó responsive <br>
-Table không linh hoạt trên mobile <br>
-❌ Lý do 3: Code khó bảo trì <br>
-Lồng nhiều `<tr>`, `<td>` → rất rối <br>
-❌ Lý do 4: SEO kém <br>
-Google khó hiểu nội dung <br>
+- Lý do 1: Không semantic <br>
+  Table dùng cho dữ liệu, không phải layout <br>
+- Lý do 2: Khó responsive <br>
+  Table không linh hoạt trên mobile <br>
+- Lý do 3: Code khó bảo trì <br>
+  Lồng nhiều `<tr>`, `<td>` → rất rối <br>
+- Lý do 4: SEO kém <br>
+  Google khó hiểu nội dung <br>
 
 # PHẦN B — THỰC HÀNH CODE (60 điểm)
 
@@ -144,6 +144,24 @@ Google khó hiểu nội dung <br>
 - Lỗi 12: Dòng 41 — Thẻ `<p>` trong footer không đóng — Thêm `</p>`
 
 ## Bài B4 (15đ) — Phân tích trang web thật
+
+Trong trang shopee.vn có:
+
+### 1.Sử dụng semantic
+
+- Không tìm thấy rõ các thẻ semantic như `<header>`, `<nav>`, `<main>`
+- Trang chủ yếu dùng `<div>` để xây dựng layout
+
+### 2.Tìm table trên trang
+
+- Trang Shopee không dùng table cho layout mà dùng `<div>` → không có `<thead>`, `<tbody>`
+
+### 3.Tìm form trên trang
+
+- Trang không có `action` và `method`
+- Input types:
+  `<input>` (ô nhập tìm kiếm) → type mặc định là "text" <br>
+  `<button type="button">` → dùng để kích hoạt tìm kiếm <br>
 
 # PHẦN C — SUY LUẬN (20 điểm)
 
