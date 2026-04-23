@@ -83,6 +83,32 @@ Format trả lời:
 
 ## Trả lời
 
+1. - `<label>` giúp liên kết mô tả với ô input thông qua thuộc tính "for"
+   - Screen reader sẽ đọc: "Email, edit text" thay vì chỉ "edit text" <br>
+     → Người dùng biết chính xác ô đó dùng để nhập gì
+
+2. - Dùng khi có nhiều input liên quan cùng một nhóm <br>
+     → Giúp screen reader hiểu đây là một nhóm thông tin
+   - <fieldset>: bao nhóm
+   - <legend>: tiêu đề nhóm
+
+Ví dụ:
+
+```
+<fieldset>
+    <legend>Phương thức thanh toán</legend>
+    <input type="radio" name="pay"> Tiền mặt
+    <input type="radio" name="pay"> Chuyển khoản
+</fieldset>
+```
+
+3. - Dùng khi KHÔNG có label hiển thị
+   - Ví dụ: icon button, input không có text <br>
+     `<input type="text" aria-label="Tìm kiếm">`
+   - Không nên dùng aria-label khi đã có `<label>` vì sẽ bị trùng thông tin
+   - Screen reader có thể đọc 2 lần gây rối
+   - `<label>` là semantic chuẩn, nên ưu tiên dùng
+
 ## Câu A4 (5đ) — Media
 
 1. Giải thích thuộc tính `loading="lazy"` trên thẻ `<img>`. Nó cải thiện gì? Khi nào KHÔNG nên dùng?
@@ -93,6 +119,52 @@ Format trả lời:
    - Ảnh biểu đồ doanh thu Q1/2026
 
 ## Trả lời
+
+1. loading="lazy" trên `<img>`
+
+- Là thuộc tính giúp trì hoãn việc tải ảnh cho đến khi ảnh gần xuất hiện trong viewport (màn hình) <br>
+  → Trình duyệt chỉ tải khi cần
+
+- Lợi ích:
+  - Tăng tốc độ tải trang ban đầu
+  - Giảm băng thông
+  - Cải thiện hiệu năng (đặc biệt trang có nhiều ảnh như E-Commerce)
+
+- Khi KHÔNG nên dùng:
+  - Ảnh quan trọng ở trên cùng (above-the-fold)
+  - Ảnh logo, banner chính <br>
+    → Vì cần hiển thị ngay, nếu lazy sẽ gây chậm hiển thị
+
+2. Tại sao nên dùng nhiều `<source>` trong `<video>`?
+
+- Vì các trình duyệt hỗ trợ format khác nhau <br>
+  → Đảm bảo video chạy được trên mọi trình duyệt
+
+- Nếu 1 format không hỗ trợ → trình duyệt sẽ dùng source khác
+
+- Các format video phổ biến:
+  - MP4 (.mp4)
+  - WebM (.webm)
+  - Ogg (.ogv)
+
+3. Thuộc tính alt trên <img>
+
+- Dùng để:
+  - Mô tả nội dung ảnh cho screen reader
+  - Hiển thị khi ảnh bị lỗi
+  - Hỗ trợ SEO
+
+Ví dụ alt tốt: <br>
+
+- Ảnh sản phẩm iPhone 16: <br>
+  alt="iPhone 16 Pro màu titan, mặt trước và sau"
+
+- Ảnh trang trí (decorative): <br>
+  alt="" <br>
+  → để trống để screen reader bỏ qua
+
+- Ảnh biểu đồ doanh thu Q1/2026: <br>
+  alt="Biểu đồ doanh thu quý 1 năm 2026 tăng 20% so với quý trước"
 
 ## Câu A5 (5đ) — So sánh `<figure>` vs `<img>`
 
@@ -109,9 +181,27 @@ Format trả lời:
 
 Khi nào dùng Cách 1, khi nào dùng Cách 2? Cho 2 ví dụ thực tế cho mỗi cách.
 
----
-
 ## Trả lời
+
+- Dùng `<img>`:
+  - Ảnh nhỏ, icon, ảnh không cần mô tả thêm
+    Ví dụ:
+    ```
+    <img src="iphone16.jpg" alt="iPhone">
+    <p>iPhone 16 Pro Max — 25.990.000đ</p>
+    ```
+
+- Dùng `<figure>`:
+  - Ảnh sản phẩm
+  - Biểu đồ, hình minh họa có chú thích
+  - Nội dung cần giải thích kèm the
+    Ví dụ:
+    ```
+    <figure>
+    <img src="product.jpg" alt="iPhone 16 Pro Max 256GB Titan">
+    <figcaption>iPhone 16 Pro Max — 25.990.000đ</figcaption>
+    </figure>
+    ```
 
 # PHẦN B — THỰC HÀNH CODE (55 điểm)
 
