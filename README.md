@@ -1,4 +1,4 @@
-# CSE391 - Frontend
+# CSE391_NguyenVanChien_241170867
 
 ## Thông tin sinh viên
 
@@ -8,7 +8,7 @@
 
 ## Nội dung
 
-### PBT_01
+### PBT_01_HTML_Fundamentals
 
 🔹PHẦN A — KIỂM TRA ĐỌC HIỂU (20 điểm)
 
@@ -32,13 +32,15 @@
 
 🔹PHẦN C — SUY LUẬN (20 điểm)
 
-- Câu C1 (10đ) — Thiết kế cấu trúc : Chưa hoàn thành
+- Câu C1 (10đ) — Thiết kế cấu trúc : Đã hoàn thành
 
-- Câu C2 (10đ) — So sánh & Tranh luận : Chưa hoàn thành
+- Câu C2 (10đ) — So sánh & Tranh luận : Đã hoàn thành
 
 🔹PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
 
 - Video : Chưa hoàn thành
+
+### PBT_02_HTML_Forms_Media
 
 ## Ghi chú
 

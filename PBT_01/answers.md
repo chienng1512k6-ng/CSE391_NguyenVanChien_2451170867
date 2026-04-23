@@ -165,4 +165,128 @@ Trong trang shopee.vn có:
 
 # PHẦN C — SUY LUẬN (20 điểm)
 
+## Câu C1 (10đ) — Thiết kế cấu trúc
+
+```html
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nguyễn Văn Chiến</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- HEADER: chứa logo + menu điều hướng -->
+      <h1>Sản phẩm</h1>
+      <!-- tiêu đề website -->
+
+      <!-- NAV: menu điều hướng chính -->
+      <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Danh mục</a>
+        <a href="#">Liên hệ</a>
+      </nav>
+    </header>
+
+    <!-- MAIN: nội dung chính của trang -->
+    <main>
+      <!-- BREADCRUMB: điều hướng vị trí -->
+      <nav aria-label="breadcrumb">
+        <!-- dùng ol vì breadcrumb có thứ tự -->
+        <ol>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Điện thoại</a></li>
+          <li><a href="#">iPhone 16</a></li>
+        </ol>
+      </nav>
+
+      <!-- SECTION: khối chi tiết sản phẩm -->
+      <section>
+        <!-- ARTICLE: 1 sản phẩm độc lập -->
+        <article>
+          <!-- FIGURE: chứa hình ảnh sản phẩm -->
+          <figure>
+            <img src="img1.jpg" alt="Ảnh sản phẩm 1" />
+            <img src="img2.jpg" alt="Ảnh sản phẩm 2" />
+            <img src="img3.jpg" alt="Ảnh sản phẩm 3" />
+            <img src="img4.jpg" alt="Ảnh sản phẩm 4" />
+            <img src="img5.jpg" alt="Ảnh sản phẩm 5" />
+            <!-- figcaption: mô tả ảnh -->
+            <figcaption>Hình ảnh sản phẩm</figcaption>
+          </figure>
+
+          <!-- SECTION: thông tin sản phẩm -->
+          <section>
+            <h2>iPhone 16</h2>
+            <!-- tên sản phẩm -->
+
+            <p>Giá: <strong>25.990.000đ</strong></p>
+            <!-- giá -->
+
+            <p>⭐⭐⭐⭐⭐</p>
+            <!-- đánh giá sao -->
+
+            <p>Mô tả sản phẩm...</p>
+            <!-- mô tả -->
+          </section>
+
+          <!-- SECTION: bảng thông số kỹ thuật -->
+          <section>
+            <h2>Thông số kỹ thuật</h2>
+
+            <table border="1">
+              <!-- thead: tiêu đề bảng -->
+              <thead>
+                <tr>
+                  <th>Thuộc tính</th>
+                  <th>Giá trị</th>
+                </tr>
+              </thead>
+
+              <!-- tbody: dữ liệu -->
+              <tbody>
+                <tr>
+                  <td>Màn hình</td>
+                  <td>6.7 inch</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- SECTION: đánh giá / bình luận -->
+          <section>
+            <h2>Đánh giá</h2>
+            <p>Người dùng bình luận...</p>
+          </section>
+        </article>
+      </section>
+
+      <!-- ASIDE: sản phẩm liên quan -->
+      <aside>
+        <h3>Sản phẩm tương tự</h3>
+        <p>Danh sách sản phẩm...</p>
+      </aside>
+    </main>
+
+    <!-- FOOTER: thông tin cuối trang -->
+    <footer>
+      <p>&copy; 2026 ShopTLU</p>
+    </footer>
+  </body>
+</html>
+```
+
+## Câu C2 (10đ) — So sánh & Tranh luận
+
+Việc sử dụng `<div>` cho mọi thứ và chỉ dựa vào class có thể nhanh lúc đầu, nhưng về lâu dài sẽ gây nhiều vấn đề:
+
+- Thứ nhất, về SEO, các công cụ tìm kiếm như Google sử dụng cấu trúc semantic để hiểu nội dung trang. Khi dùng các thẻ như `<header>`, `<article>`, `<section>`, nội dung được phân loại rõ ràng, giúp tăng khả năng xếp hạng. Ngược lại, nếu toàn bộ là `<div>`, công cụ tìm kiếm khó xác định đâu là nội dung chính.
+
+- Thứ hai, về accessibility, semantic HTML hỗ trợ các công cụ như screen reader đọc trang web hiệu quả hơn. Ví dụ, khi dùng `<nav>`, người dùng khiếm thị có thể nhanh chóng nhảy đến khu vực điều hướng mà không phải nghe toàn bộ nội dung. Nếu chỉ dùng `<div>`, trải nghiệm này sẽ kém hơn rất nhiều.
+
+Một ví dụ cụ thể: trang blog sử dụng `<article>` cho từng bài viết sẽ giúp cả công cụ tìm kiếm và người dùng hiểu rằng mỗi khối là một nội dung độc lập. Điều này cải thiện SEO và khả năng truy cập rõ rệt so với việc dùng `<div>`.
+
+Tuy nhiên, `<div>` vẫn phù hợp trong các trường hợp chỉ dùng để chia layout hoặc styling, ví dụ như wrapper hoặc grid container trong CSS. Vì vậy, cách tốt nhất không phải là bỏ semantic HTML, mà là kết hợp hợp lý giữa semantic và `<div>` để đạt hiệu quả tối ưu.
+
 # PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
