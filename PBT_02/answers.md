@@ -215,6 +215,127 @@ Khi nào dùng Cách 1, khi nào dùng Cách 2? Cho 2 ví dụ thực tế cho m
 
 ## Câu C1 (10đ) — Debug Form
 
+- Lỗi 1: Dòng 2 — Input "Tên" không có `<label for="...">` và không có required
+- Sửa:
+
+```
+  <label for="name">Tên:</label>
+  <input type="text" id="name" name="name" required>
+```
+
+- Lỗi 2: Dòng 4 — Input email không có label
+- Sửa:
+
+```
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Email của bạn" required>
+```
+
+- Lỗi 3: Dòng 6 — Input password không có label và không có validation
+- Sửa:
+
+```
+  <label for="password">Mật khẩu:</label>
+  <input type="password" id="password" name="password" minlength="8" required>
+```
+
+- Lỗi 4: Dòng 7 — Input confirm password không có label và không có validation
+- Sửa:
+
+```
+  <label for="confirm">Nhập lại mật khẩu:</label>
+  <input type="password" id="confirm" name="confirm" minlength="8" required>
+```
+
+- Lỗi 5: Dòng 9 — Input Phone dùng type="text" thay vì type="tel"
+- Sửa:
+
+```
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Nhập số điện thoại">
+```
+
+- Lỗi 6: Dòng 9 — Không nên dùng value mặc định cho số điện thoại
+- Sửa: bỏ value="0901234567"
+
+- Lỗi 7: Dòng 11 — `<select>` không có label
+- Sửa:
+
+```
+  <label for="city">Thành phố:</label>
+  <select id="city" name="city">
+```
+
+- Lỗi 8: Dòng 16 — Checkbox điều khoản không có input checkbox, chỉ có label
+- Sửa:
+
+```
+  <input type="checkbox" id="terms" required>
+  <label for="terms">Tôi đồng ý điều khoản</label>
+```
+
 ## Câu C2 (10đ) — Thiết kế chiến lược Validation
+
+1. CMND/CCCD (12 chữ số)
+
+```
+HTML:
+<input type="text" id="cccd" name="cccd"
+       pattern="[0-9]{12}"
+       required
+       placeholder="Nhập 12 chữ số">
+```
+
+Giải thích:
+
+- pattern="[0-9]{12}" → bắt buộc đúng 12 chữ số
+- required → không được để trống
+
+2. Số tài khoản (10-15 chữ số)
+
+```
+HTML:
+<input type="text" id="account" name="account"
+       pattern="[0-9]{10,15}"
+       required
+       placeholder="10-15 chữ số">
+```
+
+Giải thích:
+
+- pattern="[0-9]{10,15}" → từ 10 đến 15 chữ số
+- required → bắt buộc nhập
+
+---
+
+3. Email
+
+```
+HTML:
+<input type="email" id="email" name="email"
+       required
+       placeholder="Nhập email">
+```
+
+Giải thích:
+
+- type="email" → tự kiểm tra định dạng (có @, domain)
+- required → không được để trống
+
+4. PIN (6 chữ số, không hiển thị)
+
+```
+HTML:
+<input type="password" id="pin" name="pin"
+       pattern="[0-9]{6}"
+       required
+       placeholder="Nhập PIN 6 số">
+```
+
+Giải thích:
+
+- type="password" → ẩn ký tự
+- pattern="[0-9]{6}" → đúng 6 chữ số
+- required → bắt buộc nhập
 
 # PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
