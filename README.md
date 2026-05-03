@@ -68,7 +68,37 @@
 
 - Câu C2 (10đ) — Thiết kế chiến lược Validation : **Đã hoàn thành**
 
-🔹PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm) : **Đã hoàn thành**
+🔹PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
+
+- Video : **Chưa hoàn thành**
+
+### PBT_03_CSS_Core
+
+🔹PHẦN A — KIỂM TRA ĐỌC HIỂU (25 điểm)
+
+- Câu A1 (5đ) — 3 Cách nhúng CSS : **Đã hoàn thành**
+
+- Câu A2 (8đ) — CSS Selectors — Dự đoán kết quả : **Đã hoàn thành**
+
+- Câu A3 (7đ) — Box Model — Tính toán kích thước : **Chưa hoàn thành**
+
+- Câu A4 (5đ) — Specificity (Độ ưu tiên) : **Chưa hoàn thành**
+
+🔹PHẦN B — THỰC HÀNH CODE (55 điểm)
+
+- Bài B1 (20đ) — Style trang Profile : **Đã hoàn thành**
+
+- Bài B2 (20đ) — Box Model Lab : **Chưa hoàn thành**
+
+- Bài B3 (15đ) — Specificity Battle : **Chưa hoàn thành**
+
+🔹PHẦN C — DEBUG & SUY LUẬN (20 điểm)
+
+- Câu C1 (10đ) — Debug CSS Layout : **Chưa hoàn thành**
+
+- Câu C2 (10đ) — Cascade Puzzle : **Chưa hoàn thành**
+
+🔹PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
 
 - Video : **Chưa hoàn thành**
 
