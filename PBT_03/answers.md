@@ -65,16 +65,19 @@ Khi nên dùng: <br>
 
 3. External CSS
 
-Ví dụ: <br>
+Ví dụ:
 
-```
+```html
 <head>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+```
 
 File style.css:
+
+```css
 p {
-color: green;
+  color: green;
 }
 ```
 
@@ -222,7 +225,6 @@ Cho HTML sau:
 
 ## Trả lời
 
-```css
 Trường hợp 1: content-box
 
 → Chiều rộng hiển thị = 400 + 20*2 + 5*2 = 450px
@@ -252,7 +254,6 @@ Nâng cao:
 .box-b { margin-top: 40px; }
 
 → Khoảng cách = 40 + (-10) = 30px
-```
 
 ## Câu A4 (5đ) — Specificity (Độ ưu tiên)
 
@@ -282,19 +283,19 @@ p.price {
 
 1. Specificity:
 
-Rule A: p
-→ (0, 0, 1)
+- Rule A: p
+  → (0, 0, 1)
 
-Rule B: .price
-→ (0, 1, 0)
+- Rule B: .price
+  → (0, 1, 0)
 
-Rule C: #main-price
-→ (1, 0, 0)
+- Rule C: #main-price
+  → (1, 0, 0)
 
-Rule D: p.price
-→ (0, 1, 1)
+- Rule D: p.price
+  → (0, 1, 1)
 
-2. Element sẽ có màu gì?
+2. Element sẽ có màu gì? <br>
 
 → Màu đỏ. Vì Rule C (#main-price) có specificity cao nhất (1,0,0)
 
@@ -322,14 +323,12 @@ color: black !important;
 
 ## Bài B2 (20đ) — Box Model Lab
 
-Phần 1:
+**Phần 1:**
 
-Hộp 1 (content-box):
+Hộp 1 (content-box): <br>
 → Chiều rộng thực tế = 350px
 
-(300 + 20*2 + 5*2)
-
-Hộp 2 (border-box):
+Hộp 2 (border-box): <br>
 → Chiều rộng thực tế = 300px
 
 Giải thích:
@@ -337,9 +336,9 @@ Giải thích:
 - content-box: width chỉ tính content → padding + border làm tăng kích thước
 - border-box: width đã bao gồm padding + border → không bị phình ra
 
-Phần 2:
+**Phần 2:**
 
-Trường hợp content-box:
+Trường hợp content-box: <br>
 
 - Sidebar: 250 + padding
 - Content: 500 + padding
@@ -357,7 +356,7 @@ Giải thích:
 
 ## Bài B3 (15đ) — Specificity Battle
 
-## Specificity Battle
+**Specificity Battle**
 
 1. p → (0,0,1)
 2. .text → (0,1,0)
@@ -370,24 +369,18 @@ Giải thích:
 9. #demo.text → (1,1,0)
 10. #demo.text.highlight → (1,2,0)
 
----
+- Element cuối cùng hiển thị màu:
+  → black
 
-Element cuối cùng hiển thị màu:
+- Giải thích:
+  → Rule #10 có specificity cao nhất (1,2,0) nên ghi đè tất cả rule khác.
 
-→ black
+- Nếu thay đổi thứ tự rules trong CSS:
+  → KHÔNG đổi kết quả
 
-Giải thích:
-Rule #10 có specificity cao nhất (1,2,0) nên ghi đè tất cả rule khác.
-
----
-
-Nếu thay đổi thứ tự rules trong CSS:
-
-→ KHÔNG đổi kết quả
-
-Giải thích:
-Trình duyệt ưu tiên specificity trước, không phải thứ tự.
-Chỉ khi specificity bằng nhau thì mới xét thứ tự (rule viết sau thắng).
+- Giải thích:
+  → Trình duyệt ưu tiên specificity trước, không phải thứ tự.
+  → Chỉ khi specificity bằng nhau thì mới xét thứ tự (rule viết sau thắng).
 
 # PHẦN C — DEBUG & SUY LUẬN (20 điểm)
 
@@ -429,11 +422,7 @@ Sidebar:
 - padding: 20px
 - border: 1px
 
-→ Chiều rộng thực tế:
-300 + 20*2 + 1*2
-= 342px
-
----
+→ Chiều rộng thực tế: 300 + 20*2 + 1*2 = 342px
 
 Content:
 
@@ -441,57 +430,47 @@ Content:
 - padding: 30px
 - border: 1px
 
-→ Chiều rộng thực tế:
-660 + 30*2 + 1*2
-= 722px
+→ Chiều rộng thực tế: 660 + 30*2 + 1*2 = 722px
 
----
+- Tổng chiều rộng: 342 + 722 = 1064px
 
-Tổng chiều rộng:
-
-342 + 722
-= 1064px
-
-Trong khi container chỉ có 960px
+- Trong khi container chỉ có 960px
 
 → Layout bị vỡ
 
 2. Giải thích tại sao layout bị vỡ
 
-CSS mặc định dùng box-sizing: content-box
+- CSS mặc định dùng box-sizing: content-box
 
 → width chỉ tính phần content
 → padding và border được cộng thêm bên ngoài
 
-Tổng kích thước sidebar + content lớn hơn container
-nên content bị đẩy xuống dòng mới.
+- Tổng kích thước sidebar + content lớn hơn container nên content bị đẩy xuống dòng mới.
 
 3. Hai cách sửa
 
 Cách 1 — Dùng border-box
 
-box-sizing: border-box;
+- box-sizing: border-box;
 
 → padding + border được tính bên trong width
 → tổng kích thước không vượt quá container
 
----
-
 Cách 2 — Không dùng border-box
 
-Giảm width thực tế:
+- Giảm width thực tế:
 
+```css
 .sidebar {
-width: 258px;
+  width: 258px;
 }
 
 .content {
-width: 598px;
+  width: 598px;
 }
+```
 
-Tổng:
-258 + 40 + 2 + 598 + 60 + 2
-= 960px
+Tổng: 258 + 40 + 2 + 598 + 60 + 2 = 960px
 
 → Layout vừa container
 
@@ -560,8 +539,9 @@ Sau đó, tạo file HTML+CSS kiểm chứng và chụp screenshot.
 
 - font-size = 20px
 
-- Giải thích:
-  Rule:
+- Giải thích: <br>
+
+Rule:
 
 ```css
 .card .title {
@@ -569,15 +549,13 @@ Sau đó, tạo file HTML+CSS kiểm chứng và chụp screenshot.
 }
 ```
 
-→ h2 có class="title"
-→ nằm trong .card
-→ áp dụng font-size: 20px
+→ h2 có class="title" <br>
+→ nằm trong .card <br>
+→ áp dụng font-size: 20px <br>
 
----
+=> color = green
 
-color = green
-
-- Giải thích:
+- Giải thích: <br>
 
 Có các rule:
 
@@ -595,17 +573,15 @@ Có các rule:
 }
 ```
 
----
+- Cascade: <br>
 
-Cascade:
+→ blue được inherit từ .card <br>
+→ red áp dụng trực tiếp từ #featured .title <br>
+→ green có !important <br>
+<br>
+→ !important ưu tiên cao nhất <br>
 
-- blue được inherit từ .card
-- red áp dụng trực tiếp từ #featured .title
-- green có !important
-
-→ !important ưu tiên cao nhất
-
-=> Màu cuối cùng = green
+=> Màu cuối cùng = green <br>
 
 2. "Mô tả sản phẩm" (p trong featured)
 
@@ -613,11 +589,9 @@ HTML:
 
 `<p>Mô tả sản phẩm</p>`
 
----
+=> color = blue
 
-color = blue
-
-- Giải thích:
+- Giải thích: <br>
 
 Rule:
 
@@ -631,16 +605,15 @@ Rule:
 }
 ```
 
----
+- p dùng:
 
-p dùng:
+→ color: inherit <br>
 
-color: inherit
+=> kế thừa màu từ phần tử cha (.card)
 
-→ kế thừa màu từ phần tử cha (.card)
+- .card có:
 
-.card có:
-color: blue
+→ color: blue <br>
 
 => p cũng có màu blue
 
@@ -650,11 +623,9 @@ HTML:
 
 `<h2 class="title">Sản phẩm B</h2>`
 
----
+- font-size = 20px
 
-font-size = 20px
-
-Giải thích:
+- Giải thích: <br>
 
 Rule:
 
@@ -666,20 +637,18 @@ Rule:
 
 → áp dụng trực tiếp
 
----
+=> color = blue
 
-color = blue
+Giải thích: <br>
 
-Giải thích:
+Không có: <br>
 
-Không có:
+- #featured <br>
+- .highlight <br>
 
-- #featured
-- .highlight
+nên h2 không có color riêng <br>
 
-nên h2 không có color riêng
-
-→ kế thừa từ:
+→ kế thừa từ: <br>
 
 ```css
 .card {
@@ -687,7 +656,7 @@ nên h2 không có color riêng
 }
 ```
 
-=> màu blue
+=> màu blue <br>
 
 4. "Mô tả sản phẩm B"
 
@@ -695,11 +664,9 @@ HTML:
 
 `<p class="highlight">Mô tả sản phẩm B</p>`
 
----
+=> color = green <br>
 
-color = green
-
-Giải thích:
+Giải thích: <br>
 
 Rule:
 
@@ -709,10 +676,10 @@ Rule:
 }
 ```
 
-→ p có class="highlight"
+→ p có class="highlight" <br>
 
-!important ưu tiên cao nhất
+!important ưu tiên cao nhất <br>
 
-=> màu cuối cùng = green
+=> màu cuối cùng = green <br>
 
 # 🎬 PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
