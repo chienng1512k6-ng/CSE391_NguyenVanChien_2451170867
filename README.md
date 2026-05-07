@@ -80,23 +80,23 @@
 
 - Câu A2 (8đ) — CSS Selectors — Dự đoán kết quả : **Đã hoàn thành**
 
-- Câu A3 (7đ) — Box Model — Tính toán kích thước : **Chưa hoàn thành**
+- Câu A3 (7đ) — Box Model — Tính toán kích thước : **Đã hoàn thành**
 
-- Câu A4 (5đ) — Specificity (Độ ưu tiên) : **Chưa hoàn thành**
+- Câu A4 (5đ) — Specificity (Độ ưu tiên) : **Đã hoàn thành**
 
 🔹PHẦN B — THỰC HÀNH CODE (55 điểm)
 
 - Bài B1 (20đ) — Style trang Profile : **Đã hoàn thành**
 
-- Bài B2 (20đ) — Box Model Lab : **Chưa hoàn thành**
+- Bài B2 (20đ) — Box Model Lab : **Đã hoàn thành**
 
-- Bài B3 (15đ) — Specificity Battle : **Chưa hoàn thành**
+- Bài B3 (15đ) — Specificity Battle : **Đã hoàn thành**
 
 🔹PHẦN C — DEBUG & SUY LUẬN (20 điểm)
 
-- Câu C1 (10đ) — Debug CSS Layout : **Chưa hoàn thành**
+- Câu C1 (10đ) — Debug CSS Layout : **Đã hoàn thành**
 
-- Câu C2 (10đ) — Cascade Puzzle : **Chưa hoàn thành**
+- Câu C2 (10đ) — Cascade Puzzle : **Đã hoàn thành**
 
 🔹PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
 
