@@ -102,6 +102,30 @@
 
 - Video : **Chưa hoàn thành**
 
-## Ghi chú
+### PBT_04_CSS_Layout
 
-- Code tự làm
+🔹PHẦN A — KIỂM TRA ĐỌC HIỂU (20 điểm)
+
+- Câu A1 (10đ) — 5 Loại Positioning : **Đã hoàn thành**
+
+- Câu A2 (10đ) — Flexbox vs Grid : **Đã hoàn thành**
+
+🔹PHẦN B — THỰC HÀNH CODE (60 điểm)
+
+- Bài B1 (15đ) — Positioning Playground : **Đã hoàn thành**
+
+- Bài B2 (20đ) — Flexbox Navigation & Cards : **Đã hoàn thành**
+
+- Bài B3 (25đ) — Grid Layout — Trang E-Commerce : **Chưa hoàn thành**
+
+🔹PHẦN C — SUY LUẬN (20 điểm)
+
+- Câu C1 (10đ) — Flexbox vs Grid: Khi nào dùng gì? : **Đã hoàn thành**
+
+- Câu C2 (10đ) — Debug Flexbox : **Đã hoàn thành**
+
+🔹PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
+
+- Video : **Chưa hoàn thành**
+
+## Ghi chú
